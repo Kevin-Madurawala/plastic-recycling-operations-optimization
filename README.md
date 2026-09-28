@@ -38,13 +38,13 @@ The workflow followed an end-to-end analytics process: **data preparation → Ex
 
 ### Operations Overview
 
-![Operations Overview](dashboard/operations_overview.png)
+![Operations Overview](dashboard/operations_overview.svg)
 
 The operations page tracks throughput, yield, downtime, pickup service performance, monthly production output, and material-level filtering.
 
 ### Continuous Improvement Analysis
 
-![Continuous Improvement Analysis](dashboard/continuous_improvement.png)
+![Continuous Improvement Analysis](dashboard/continuous_improvement.svg)
 
 The improvement page focuses on downtime causes, machine downtime, contamination, yield performance, and prioritized improvement opportunities.
 
@@ -131,8 +131,8 @@ plastic-recycling-operations-optimization/
 │   └── README.md
 ├── dashboard/
 │   ├── README.md
-│   ├── operations_overview.png
-│   └── continuous_improvement.png
+│   ├── operations_overview.svg
+│   └── continuous_improvement.svg
 └── results/
     ├── summary_metrics.csv
     ├── downtime_by_cause.csv
