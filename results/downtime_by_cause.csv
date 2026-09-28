@@ -1,0 +1,8 @@
+Downtime_Cause,Minutes,Percent_of_Total,Cumulative_Percent
+Maintenance,3668,32.45%,32.45%
+Material Jam,2875,25.44%,57.89%
+Sensor Fault,1327,11.74%,69.63%
+Changeover,1103,9.76%,79.39%
+Cleaning,1040,9.20%,88.59%
+Contamination,776,6.87%,95.45%
+Operator Delay,514,4.55%,100.00%
