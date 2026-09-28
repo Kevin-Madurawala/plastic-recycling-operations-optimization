@@ -32,21 +32,23 @@ The workflow followed an end-to-end analytics process: **data preparation → Ex
 - **Mixed plastic recorded the lowest average throughput and yield**, indicating a key processing-efficiency challenge.
 - **Sorter 1 recorded the highest machine downtime** and would be prioritized for root-cause analysis.
 - The modeled operation achieved an **87% on-time pickup rate**.
-- Contamination alone did not fully explain yield differences, suggesting that additional material and process characteristics would need to be investigated before assigning root cause.
+- Contamination alone did not fully explain yield differences, suggesting additional material and process characteristics would need to be investigated before assigning root cause.
 
 ## Power BI Dashboard
 
 ### Operations Overview
 
-![Operations Overview](dashboard/operations_overview.svg)
+![Operations Overview](dashboard/operations_overview.png)
 
 The operations page tracks throughput, yield, downtime, pickup service performance, monthly production output, and material-level filtering.
 
 ### Continuous Improvement Analysis
 
-![Continuous Improvement Analysis](dashboard/continuous_improvement.svg)
+![Continuous Improvement Analysis](dashboard/continuous_improvement.png)
 
 The improvement page focuses on downtime causes, machine downtime, contamination, yield performance, and prioritized improvement opportunities.
+
+[Download the Power BI report](dashboard/Plastic_Recycling_Dashboard.pbix)
 
 ## Excel Analysis
 
@@ -59,6 +61,8 @@ Excel was used for initial data preparation and operations analysis, including:
 - Cumulative downtime-percentage analysis
 
 The Pareto analysis showed that **maintenance + material jams represented 57.9% of total modeled downtime**.
+
+[View Excel documentation](excel/README.md)
 
 ## SQL Analysis
 
@@ -93,7 +97,7 @@ Relationships used in the analytical model:
 - `customers[Customer_ID]` → `pickups[Customer_ID]`
 - `processing_batches[Batch_ID]` → `quality_records[Batch_ID]`
 
-[View dataset documentation](data/README.md)
+The cleaned CSV datasets are available in [`data/`](data/).
 
 ## Supporting Results
 
@@ -128,11 +132,19 @@ plastic-recycling-operations-optimization/
 ├── README.md
 ├── analysis_queries.sql
 ├── data/
-│   └── README.md
+│   ├── README.md
+│   ├── customers.csv
+│   ├── pickups.csv
+│   ├── processing_batches.csv
+│   ├── quality_records.csv
+│   └── downtime_events.csv
 ├── dashboard/
 │   ├── README.md
-│   ├── operations_overview.svg
-│   └── continuous_improvement.svg
+│   ├── operations_overview.png
+│   ├── continuous_improvement.png
+│   └── Plastic_Recycling_Dashboard.pbix
+├── excel/
+│   └── README.md
 └── results/
     ├── summary_metrics.csv
     ├── downtime_by_cause.csv
