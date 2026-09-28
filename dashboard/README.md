@@ -1,8 +1,9 @@
-# Dashboard Previews
+# Power BI Dashboard
 
-This folder contains two vector previews based on the final Power BI dashboard:
+This folder contains the final Power BI deliverables for the project:
 
-- `operations_overview.svg`
-- `continuous_improvement.svg`
+- `operations_overview.png` — Operations Overview dashboard screenshot
+- `continuous_improvement.png` — Continuous Improvement dashboard screenshot
+- `Plastic_Recycling_Dashboard.pbix` — refreshed Power BI report file
 
-The Power BI report was built from the cleaned synthetic recycling-operations dataset and refreshed after final data-quality corrections. These SVG files reproduce the final dashboard metrics and visuals in a GitHub-friendly format.
+The report uses the cleaned synthetic recycling-operations datasets in the `data/` folder.
