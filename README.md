@@ -62,7 +62,7 @@ Excel was used for initial data preparation and operations analysis, including:
 
 The Pareto analysis showed that **maintenance + material jams represented 57.9% of total modeled downtime**.
 
-[View Excel documentation](excel/README.md)
+[Download the Excel workbook](excel/Plastic%20Recycling.xlsx) · [View Excel documentation](excel/README.md)
 
 ## SQL Analysis
 
@@ -144,7 +144,8 @@ plastic-recycling-operations-optimization/
 │   ├── continuous_improvement.png
 │   └── Plastic_Recycling_Dashboard.pbix
 ├── excel/
-│   └── README.md
+│   ├── README.md
+│   └── Plastic Recycling.xlsx
 └── results/
     ├── summary_metrics.csv
     ├── downtime_by_cause.csv
