@@ -1,0 +1,201 @@
+﻿Event_ID,Date,Machine,Downtime_Reason,Downtime_Duration
+D001,2026-01-23,Shredder 1,Operator Delay,44
+D002,2026-03-02,Shredder 2,Maintenance,52
+D003,2026-02-13,Sorter 1,Operator Delay,11
+D004,2026-09-26,Pelletizer 1,Cleaning,42
+D005,2026-08-30,Washer 1,Material Jam,36
+D006,2026-09-27,Shredder 1,Operator Delay,38
+D007,2026-03-25,Shredder 1,Sensor Fault,80
+D008,2026-08-13,Washer 1,Operator Delay,24
+D009,2026-11-20,Washer 1,Contamination,30
+D010,2026-09-28,Shredder 2,Material Jam,33
+D011,2026-06-11,Shredder 2,Changeover,34
+D012,2026-04-29,Shredder 1,Sensor Fault,81
+D013,2026-11-28,Shredder 2,Changeover,32
+D014,2026-06-28,Washer 1,Maintenance,60
+D015,2026-06-16,Shredder 1,Cleaning,51
+D016,2026-01-08,Washer 1,Material Jam,50
+D017,2026-01-13,Sorter 1,Material Jam,27
+D018,2026-07-15,Shredder 1,Maintenance,178
+D019,2026-12-06,Sorter 1,Contamination,53
+D020,2026-11-03,Sorter 1,Cleaning,58
+D021,2026-10-29,Washer 1,Maintenance,140
+D022,2026-02-08,Shredder 1,Maintenance,123
+D023,2026-07-21,Shredder 1,Operator Delay,25
+D024,2026-04-26,Shredder 2,Cleaning,37
+D025,2026-07-26,Washer 1,Sensor Fault,56
+D026,2026-02-14,Shredder 2,Sensor Fault,25
+D027,2026-01-02,Shredder 2,Contamination,47
+D028,2026-08-12,Shredder 1,Sensor Fault,20
+D029,2026-05-28,Shredder 1,Cleaning,56
+D030,2026-08-03,Sorter 1,Changeover,73
+D031,2026-10-28,Sorter 1,Sensor Fault,79
+D032,2026-05-10,Pelletizer 1,Maintenance,164
+D033,2026-02-24,Sorter 1,Sensor Fault,44
+D034,2026-12-16,Sorter 1,Sensor Fault,60
+D035,2026-01-14,Shredder 1,Operator Delay,26
+D036,2026-09-19,Shredder 2,Material Jam,88
+D037,2026-12-30,Shredder 2,Maintenance,169
+D038,2026-09-14,Pelletizer 1,Changeover,50
+D039,2026-07-01,Sorter 1,Contamination,26
+D040,2026-08-30,Sorter 1,Maintenance,45
+D041,2026-08-05,Shredder 2,Material Jam,81
+D042,2026-09-03,Shredder 1,Cleaning,36
+D043,2026-12-08,Shredder 1,Changeover,51
+D044,2026-11-02,Washer 1,Changeover,35
+D045,2026-08-30,Pelletizer 1,Sensor Fault,60
+D046,2026-12-02,Sorter 1,Cleaning,37
+D047,2026-03-08,Shredder 2,Material Jam,50
+D048,2026-05-05,Shredder 1,Material Jam,66
+D049,2026-01-14,Pelletizer 1,Material Jam,60
+D050,2026-04-14,Pelletizer 1,Material Jam,66
+D051,2026-12-23,Shredder 1,Cleaning,47
+D052,2026-04-22,Shredder 2,Contamination,31
+D053,2026-10-18,Washer 1,Sensor Fault,57
+D054,2026-05-31,Shredder 2,Changeover,42
+D055,2026-02-02,Sorter 1,Material Jam,84
+D056,2026-08-20,Shredder 2,Sensor Fault,39
+D057,2026-05-14,Shredder 1,Changeover,22
+D058,2026-05-29,Sorter 1,Sensor Fault,87
+D059,2026-05-09,Shredder 2,Material Jam,85
+D060,2026-10-28,Shredder 2,Operator Delay,11
+D061,2026-09-07,Sorter 1,Sensor Fault,55
+D062,2026-07-11,Shredder 1,Sensor Fault,90
+D063,2026-12-21,Sorter 1,Material Jam,82
+D064,2026-11-19,Washer 1,Maintenance,167
+D065,2026-09-07,Pelletizer 1,Maintenance,150
+D066,2026-01-12,Shredder 1,Operator Delay,34
+D067,2026-03-12,Shredder 1,Maintenance,60
+D068,2026-03-13,Shredder 2,Material Jam,88
+D069,2026-09-11,Pelletizer 1,Material Jam,32
+D070,2026-01-25,Washer 1,Material Jam,45
+D071,2026-01-20,Pelletizer 1,Material Jam,47
+D072,2026-12-09,Pelletizer 1,Operator Delay,36
+D073,2026-11-23,Shredder 1,Maintenance,93
+D074,2026-07-25,Shredder 1,Maintenance,116
+D075,2026-10-26,Shredder 1,Changeover,24
+D076,2026-10-21,Washer 1,Maintenance,54
+D077,2026-11-03,Shredder 2,Maintenance,153
+D078,2026-11-26,Pelletizer 1,Material Jam,34
+D079,2026-12-13,Shredder 1,Changeover,66
+D080,2026-06-16,Washer 1,Maintenance,60
+D081,2026-06-26,Shredder 2,Maintenance,111
+D082,2026-07-26,Shredder 2,Contamination,46
+D083,2026-02-26,Pelletizer 1,Operator Delay,27
+D084,2026-09-07,Pelletizer 1,Material Jam,31
+D085,2026-02-20,Pelletizer 1,Cleaning,18
+D086,2026-03-19,Pelletizer 1,Maintenance,132
+D087,2026-09-11,Shredder 1,Cleaning,47
+D088,2026-03-12,Washer 1,Maintenance,106
+D089,2026-07-12,Shredder 1,Material Jam,70
+D090,2026-01-10,Shredder 2,Cleaning,48
+D091,2026-04-24,Shredder 1,Material Jam,29
+D092,2026-12-22,Sorter 1,Cleaning,31
+D093,2026-10-28,Sorter 1,Material Jam,64
+D094,2026-11-23,Sorter 1,Material Jam,46
+D095,2026-01-03,Shredder 1,Material Jam,44
+D096,2026-02-23,Shredder 2,Contamination,58
+D097,2026-01-19,Shredder 1,Cleaning,19
+D098,2026-03-24,Pelletizer 1,Material Jam,68
+D099,2026-09-30,Shredder 2,Contamination,55
+D100,2026-12-27,Washer 1,Contamination,35
+D101,2026-04-26,Shredder 1,Material Jam,21
+D102,2026-08-19,Pelletizer 1,Operator Delay,38
+D103,2026-06-02,Shredder 1,Maintenance,85
+D104,2026-02-09,Shredder 1,Material Jam,25
+D105,2026-01-01,Pelletizer 1,Material Jam,25
+D106,2026-11-01,Sorter 1,Cleaning,45
+D107,2026-09-05,Pelletizer 1,Material Jam,70
+D108,2026-02-03,Shredder 1,Sensor Fault,81
+D109,2026-07-30,Pelletizer 1,Cleaning,17
+D110,2026-04-23,Shredder 2,Material Jam,43
+D111,2026-10-28,Sorter 1,Maintenance,137
+D112,2026-06-21,Washer 1,Cleaning,50
+D113,2026-06-03,Washer 1,Maintenance,115
+D114,2026-03-26,Shredder 1,Material Jam,83
+D115,2026-09-15,Pelletizer 1,Material Jam,60
+D116,2026-11-12,Shredder 2,Material Jam,62
+D117,2026-09-12,Sorter 1,Maintenance,80
+D118,2026-04-05,Pelletizer 1,Sensor Fault,31
+D119,2026-08-08,Sorter 1,Changeover,35
+D120,2026-05-01,Shredder 2,Cleaning,27
+D121,2026-08-01,Sorter 1,Changeover,69
+D122,2026-10-24,Shredder 1,Contamination,50
+D123,2026-07-02,Shredder 2,Maintenance,132
+D124,2026-03-13,Washer 1,Maintenance,45
+D125,2026-04-14,Sorter 1,Material Jam,22
+D126,2026-10-17,Sorter 1,Material Jam,42
+D127,2026-03-07,Shredder 2,Changeover,50
+D128,2026-08-20,Shredder 1,Operator Delay,18
+D129,2026-02-10,Shredder 1,Material Jam,84
+D130,2026-07-12,Washer 1,Material Jam,55
+D131,2026-05-19,Pelletizer 1,Material Jam,33
+D132,2026-07-18,Shredder 2,Sensor Fault,45
+D133,2026-12-27,Washer 1,Cleaning,43
+D134,2026-06-10,Pelletizer 1,Sensor Fault,20
+D135,2026-03-05,Pelletizer 1,Maintenance,97
+D136,2026-03-08,Sorter 1,Changeover,46
+D137,2026-10-27,Shredder 1,Cleaning,57
+D138,2026-08-08,Shredder 1,Maintenance,54
+D139,2026-12-28,Shredder 1,Sensor Fault,63
+D140,2026-04-05,Pelletizer 1,Maintenance,59
+D141,2026-12-24,Sorter 1,Changeover,71
+D142,2026-05-05,Washer 1,Operator Delay,30
+D143,2026-01-09,Shredder 2,Contamination,16
+D144,2026-03-11,Pelletizer 1,Material Jam,24
+D145,2026-08-30,Washer 1,Material Jam,42
+D146,2026-10-16,Shredder 2,Cleaning,38
+D147,2026-07-08,Sorter 1,Maintenance,53
+D148,2026-01-09,Pelletizer 1,Contamination,54
+D149,2026-10-08,Shredder 2,Operator Delay,14
+D150,2026-03-12,Sorter 1,Material Jam,82
+D151,2026-12-01,Sorter 1,Sensor Fault,21
+D152,2026-01-15,Sorter 1,Changeover,45
+D153,2026-11-28,Sorter 1,Material Jam,54
+D154,2026-10-06,Sorter 1,Sensor Fault,49
+D155,2026-06-09,Sorter 1,Contamination,50
+D156,2026-03-01,Shredder 2,Contamination,53
+D157,2026-03-26,Shredder 2,Changeover,53
+D158,2026-06-25,Washer 1,Operator Delay,32
+D159,2026-12-28,Shredder 2,Sensor Fault,21
+D160,2026-01-11,Washer 1,Operator Delay,21
+D161,2026-12-30,Pelletizer 1,Changeover,38
+D162,2026-12-31,Pelletizer 1,Material Jam,72
+D163,2026-12-26,Washer 1,Operator Delay,38
+D164,2026-04-24,Pelletizer 1,Cleaning,15
+D165,2026-11-04,Sorter 1,Cleaning,52
+D166,2026-11-27,Shredder 2,Material Jam,61
+D167,2026-07-22,Sorter 1,Cleaning,15
+D168,2026-05-01,Washer 1,Material Jam,39
+D169,2026-09-10,Shredder 2,Changeover,56
+D170,2026-06-13,Shredder 2,Contamination,60
+D171,2026-12-05,Shredder 1,Material Jam,89
+D172,2026-02-28,Sorter 1,Maintenance,102
+D173,2026-12-13,Sorter 1,Material Jam,57
+D174,2026-07-15,Washer 1,Operator Delay,11
+D175,2026-09-23,Pelletizer 1,Changeover,41
+D176,2026-06-05,Shredder 1,Cleaning,40
+D177,2026-09-25,Sorter 1,Maintenance,117
+D178,2026-05-23,Sorter 1,Changeover,56
+D179,2026-01-09,Sorter 1,Cleaning,44
+D180,2026-06-17,Shredder 1,Cleaning,32
+D181,2026-09-11,Sorter 1,Sensor Fault,80
+D182,2026-04-19,Sorter 1,Material Jam,20
+D183,2026-01-07,Sorter 1,Maintenance,110
+D184,2026-06-22,Washer 1,Material Jam,75
+D185,2026-04-18,Pelletizer 1,Contamination,39
+D186,2026-06-25,Pelletizer 1,Changeover,42
+D187,2026-08-04,Sorter 1,Material Jam,40
+D188,2026-04-18,Washer 1,Operator Delay,36
+D189,2026-07-22,Shredder 2,Contamination,25
+D190,2026-03-05,Shredder 2,Changeover,42
+D191,2026-02-07,Pelletizer 1,Material Jam,31
+D192,2026-04-18,Sorter 1,Sensor Fault,83
+D193,2026-07-15,Shredder 1,Material Jam,81
+D194,2026-01-15,Washer 1,Changeover,30
+D195,2026-04-27,Shredder 2,Material Jam,77
+D196,2026-10-12,Shredder 1,Cleaning,38
+D197,2026-08-21,Pelletizer 1,Maintenance,121
+D198,2026-03-27,Pelletizer 1,Maintenance,121
+D199,2026-05-14,Shredder 2,Maintenance,107
+D200,2026-02-07,Shredder 1,Contamination,48
