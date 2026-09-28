@@ -1,65 +1,68 @@
 # Plastic Recycling Operations Optimization
 
-Industrial Engineering operations-analysis project using **Excel, SQL, Power BI, and Lean Six Sigma techniques** to evaluate a modeled plastic-recycling facility.
+Industrial Engineering portfolio project using **Excel, SQL, Power BI, and Lean Six Sigma** to analyze a modeled plastic-recycling operation and identify process-improvement opportunities.
 
-> **Data note:** All operational data in this repository is synthetic and was created for portfolio/learning purposes. The project was inspired by real recycling-facility workflows but does not contain confidential company data.
+> **Data note:** All operational data used in this project is synthetic. The project was inspired by recycling-facility workflows and contains no confidential company data.
 
 ## Project Objective
 
-The goal of this project was to model a recycling operation and identify improvement opportunities across production, quality, equipment downtime, and customer pickup performance.
-
-The analysis focused on five areas:
+The project evaluates five areas of operational performance:
 
 - Processing throughput
 - Material yield
 - Equipment downtime
-- Quality / contamination
-- Pickup service performance
+- Quality and contamination
+- Customer pickup performance
 
-## Tools Used
+The workflow followed an end-to-end analytics process: **data preparation → Excel analysis → SQL analysis → Power BI dashboarding → continuous-improvement recommendations**.
 
-- **Excel:** data generation, PivotTables, KPI analysis, Pareto analysis
-- **SQL / SQLite:** aggregation, filtering, subqueries, joins, operational analysis
-- **Power BI:** data modeling, DAX measures, interactive dashboards
-- **Lean Six Sigma:** Pareto prioritization and continuous-improvement thinking
+## Key Results
 
-## Dataset
+| KPI | Result |
+| --- | ---: |
+| Average Throughput | **149.3 kg/hr** |
+| Average Yield | **88.27%** |
+| Total Downtime | **188.4 hr** |
+| On-Time Pickup Rate | **87.0%** |
+| Average Contamination | **5.36%** |
 
-The modeled operation contains five connected datasets:
-
-| Dataset | Purpose |
-| --- | --- |
-| Customers | Customer and location information |
-| Pickups | Material pickup activity and service performance |
-| Processing Batches | Production throughput, input/output, and yield |
-| Quality Records | Contamination, rejected material, and quality status |
-| Downtime Events | Machine downtime causes and duration |
-
-## Key Findings
+### Main Findings
 
 - **Maintenance and material jams accounted for 57.9% of modeled downtime**, making them the highest-priority downtime categories for further investigation.
 - **Mixed plastic recorded the lowest average throughput and yield**, indicating a key processing-efficiency challenge.
-- **Sorter 1 recorded the highest total machine downtime** in the modeled dataset and would be prioritized for root-cause analysis.
+- **Sorter 1 recorded the highest machine downtime** and would be prioritized for root-cause analysis.
 - The modeled operation achieved an **87% on-time pickup rate**.
-- Contamination alone did not fully explain yield differences, suggesting that additional process and material characteristics would need to be investigated before assigning root cause.
+- Contamination alone did not fully explain yield differences, suggesting that additional material and process characteristics would need to be investigated before assigning root cause.
+
+## Power BI Dashboard
+
+### Operations Overview
+
+![Operations Overview](dashboard/operations_overview.png)
+
+The operations page tracks throughput, yield, downtime, pickup service performance, monthly production output, and material-level filtering.
+
+### Continuous Improvement Analysis
+
+![Continuous Improvement Analysis](dashboard/continuous_improvement.png)
+
+The improvement page focuses on downtime causes, machine downtime, contamination, yield performance, and prioritized improvement opportunities.
 
 ## Excel Analysis
 
-Excel was used to build and analyze the synthetic operational data. The analysis included:
+Excel was used for initial data preparation and operations analysis, including:
 
-- Average throughput by material
-- Average yield by material
-- Total downtime by cause
-- Total downtime by machine
-- Pickup-status analysis
+- PivotTables for throughput, yield, downtime, and pickup performance
 - KPI calculations
+- Data validation and reconciliation
 - Pareto analysis of downtime causes
+- Cumulative downtime-percentage analysis
 
-The Pareto analysis showed that maintenance and material jams together represented **57.9% of total modeled downtime**.
+The Pareto analysis showed that **maintenance + material jams represented 57.9% of total modeled downtime**.
 
 ## SQL Analysis
 
-The CSV datasets were imported into SQLite and analyzed using SQL. Queries included:
+The modeled data was imported into SQLite and analyzed using seven queries covering:
 
 1. Average processing throughput by material
 2. Average yield by material
@@ -69,34 +72,38 @@ The CSV datasets were imported into SQLite and analyzed using SQL. Queries inclu
 6. Yield and contamination analysis using a `JOIN`
 7. Pickup volume by customer location using a `JOIN`
 
-SQL was used to validate the Excel findings and demonstrate analysis across related operational tables.
+[View the SQL analysis](analysis_queries.sql)
 
-## Power BI Dashboard
+SQL techniques demonstrated include `SELECT`, `GROUP BY`, `AVG`, `SUM`, `COUNT`, `ROUND`, `ORDER BY`, subqueries, aliases, and relational `JOIN`s.
 
-A two-page interactive Power BI dashboard was created.
+## Dataset Design
 
-### Operations Overview
+The synthetic operation was modeled using five connected datasets:
 
-- Average throughput
-- Average yield
-- Total downtime hours
-- On-time pickup rate
-- Throughput by material
-- Yield by material
-- Monthly production output
-- Material slicer
+| Dataset | Purpose |
+| --- | --- |
+| Customers | Customer and location information |
+| Pickups | Material collection and pickup-service performance |
+| Processing Batches | Input/output, processing time, throughput, and yield |
+| Quality Records | Contamination, rejected material, and quality status |
+| Downtime Events | Equipment downtime causes and duration |
 
-### Continuous Improvement
+Relationships used in the analytical model:
 
-- Downtime by cause
-- Downtime by machine
-- Average contamination by material
-- Yield vs. contamination analysis
-- Key findings and improvement opportunities
+- `customers[Customer_ID]` → `pickups[Customer_ID]`
+- `processing_batches[Batch_ID]` → `quality_records[Batch_ID]`
+
+[View dataset documentation](data/README.md)
+
+## Supporting Results
+
+- [Summary KPIs](results/summary_metrics.csv)
+- [Downtime Pareto results](results/downtime_by_cause.csv)
+- [Material performance results](results/material_performance.csv)
 
 ## Improvement Opportunities
 
-Based on the modeled results, the main improvement areas were:
+Based on the modeled findings, the main proposed improvement areas were:
 
 - Strengthen preventive-maintenance planning
 - Investigate recurring material jams
@@ -104,7 +111,15 @@ Based on the modeled results, the main improvement areas were:
 - Prioritize high-downtime equipment for root-cause analysis
 - Review production sequencing to reduce unnecessary changeovers and cleaning
 
-These are proposed improvement opportunities based on synthetic scenario analysis, not implemented company results.
+These are **proposed opportunities from synthetic scenario analysis**, not claimed implemented company results.
+
+## Tools & Skills
+
+**Tools:** Excel · SQL · SQLite · Power BI · DAX
+
+**Industrial Engineering:** KPI development · process analysis · downtime analysis · Pareto prioritization · continuous improvement · operational reporting
+
+**Analytics:** PivotTables · relational joins · aggregation · data visualization · dashboard design · data-quality validation
 
 ## Repository Structure
 
@@ -113,24 +128,17 @@ plastic-recycling-operations-optimization/
 ├── README.md
 ├── analysis_queries.sql
 ├── data/
-│   ├── customers.csv
-│   ├── pickups.csv
-│   ├── processing_batches.csv
-│   ├── quality_records.csv
-│   └── downtime_events.csv
+│   └── README.md
 ├── dashboard/
+│   ├── README.md
 │   ├── operations_overview.png
 │   └── continuous_improvement.png
-└── excel/
-    └── Plastic_Recycling_Analysis.xlsx
+└── results/
+    ├── summary_metrics.csv
+    ├── downtime_by_cause.csv
+    └── material_performance.csv
 ```
-
-## Skills Demonstrated
-
-**Industrial Engineering:** process analysis, KPI development, downtime analysis, continuous improvement, operations performance
-
-**Analytics:** Excel, SQL, Power BI, DAX, data visualization, relational joins, PivotTables, Pareto analysis
 
 ---
 
-**Project type:** Independent portfolio project using synthetic data inspired by recycling-facility operations.
+**Project type:** Independent Industrial Engineering portfolio project using synthetic data inspired by recycling-facility operations.
