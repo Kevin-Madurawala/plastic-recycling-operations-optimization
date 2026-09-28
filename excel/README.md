@@ -1,6 +1,8 @@
 # Excel Analysis Workbook
 
-This folder contains the cleaned Excel workbook used for the project.
+This folder contains the Excel workbook used for the project.
+
+[Download the workbook](Plastic%20Recycling.xlsx)
 
 The workbook includes:
 - Synthetic operational datasets
