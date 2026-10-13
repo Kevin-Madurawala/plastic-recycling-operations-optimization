@@ -1,6 +1,6 @@
 # Plastic Recycling Operations Optimization
 
-Industrial Engineering portfolio project using **Excel, SQL, Power BI, and Lean Six Sigma** to analyze a modeled plastic-recycling operation and identify process-improvement opportunities.
+Industrial Engineering portfolio project using **Excel, VBA, SQL, Power BI, and Lean Six Sigma** to analyze a modeled plastic-recycling operation and identify process-improvement opportunities.
 
 > **Data note:** All operational data used in this project is synthetic. The project was inspired by recycling-facility workflows and contains no confidential company data.
 
@@ -14,7 +14,7 @@ The project evaluates five areas of operational performance:
 - Quality and contamination
 - Customer pickup performance
 
-The workflow followed an end-to-end analytics process: **data preparation → Excel analysis → SQL analysis → Power BI dashboarding → continuous-improvement recommendations**.
+The workflow followed an end-to-end analytics process: **data preparation → Excel/VBA automation → SQL analysis → Power BI dashboarding → continuous-improvement recommendations**.
 
 ## Key Results
 
@@ -63,6 +63,22 @@ Excel was used for initial data preparation and operations analysis, including:
 The Pareto analysis showed that **maintenance + material jams represented 57.9% of total modeled downtime**.
 
 [Download the Excel workbook](excel/Plastic%20Recycling.xlsx) · [View Excel documentation](excel/README.md)
+
+## Excel VBA Automation
+
+The Excel workflow was extended with VBA to automate repetitive reporting and data-quality tasks:
+
+- Standardized material names and known data-entry inconsistencies
+- Standardized pickup-status categories
+- Validated expected material categories and flagged unexpected values for review
+- Refreshed PivotTables across the workbook
+- Recalculated formulas and KPI outputs after data changes
+- Added basic error handling to restore Excel settings and return useful error messages
+- Connected the master refresh procedure to a user-facing **Refresh Operations Report** button
+
+The automation is organized into reusable procedures and a master reporting macro rather than one large script.
+
+[View the VBA source](vba/OperationsAutomation.bas) · [View VBA documentation](vba/README.md)
 
 ## SQL Analysis
 
@@ -119,11 +135,11 @@ These are **proposed opportunities from synthetic scenario analysis**, not claim
 
 ## Tools & Skills
 
-**Tools:** Excel · SQL · SQLite · Power BI · DAX
+**Tools:** Excel · VBA · SQL · SQLite · Power BI · DAX
 
 **Industrial Engineering:** KPI development · process analysis · downtime analysis · Pareto prioritization · continuous improvement · operational reporting
 
-**Analytics:** PivotTables · relational joins · aggregation · data visualization · dashboard design · data-quality validation
+**Analytics:** PivotTables · VBA automation · relational joins · aggregation · data visualization · dashboard design · data-quality validation
 
 ## Repository Structure
 
@@ -146,6 +162,9 @@ plastic-recycling-operations-optimization/
 ├── excel/
 │   ├── README.md
 │   └── Plastic Recycling.xlsx
+├── vba/
+│   ├── README.md
+│   └── OperationsAutomation.bas
 └── results/
     ├── summary_metrics.csv
     ├── downtime_by_cause.csv
