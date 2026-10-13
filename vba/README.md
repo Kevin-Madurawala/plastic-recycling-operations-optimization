@@ -12,4 +12,4 @@ This folder contains the VBA source used to automate recurring Excel reporting t
 - Uses basic error handling so Excel settings are restored if the refresh fails
 - Supports a user-facing **Refresh Operations Report** button in the macro-enabled workbook
 
-[View the VBA source](OperationsAutomation.bas)
+[View the VBA source](Module1.bas)
