@@ -78,7 +78,7 @@ The Excel workflow was extended with VBA to automate repetitive reporting and da
 
 The automation is organized into reusable procedures and a master reporting macro rather than one large script.
 
-[View the VBA source](vba/OperationsAutomation.bas) · [View VBA documentation](vba/README.md)
+[View the VBA source](vba/Module1.bas) · [View VBA documentation](vba/README.md)
 
 ## SQL Analysis
 
@@ -164,7 +164,7 @@ plastic-recycling-operations-optimization/
 │   └── Plastic Recycling.xlsx
 ├── vba/
 │   ├── README.md
-│   └── OperationsAutomation.bas
+│   └── Module1.bas
 └── results/
     ├── summary_metrics.csv
     ├── downtime_by_cause.csv
